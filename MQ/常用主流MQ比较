@@ -1,3 +1,5 @@
+有啥好处：解耦、削峰。
+
 
 ## RabbitMQ
 
@@ -41,8 +43,11 @@ apache 下子项目
 分布式架构，高可用
 
 ## redis
-redis也可，实现简单，功能较少，缺少持久化，回溯等
+
+redis提供了发布订阅功能和阻塞队列功能。
+
+实现简单，一般功能可满足，缺少持久化，回溯等
 
 发布/订阅 (Pub/Sub)
 Sorted Set
-Lpush - Brpop 
+Lpush - Brpop （b: blocking的意思，阻塞队列，可以免去轮询）
