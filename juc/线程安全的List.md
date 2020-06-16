@@ -18,7 +18,19 @@
 
 ```java
 
+private transient volatile Object[] array;  // accessed only via getArray/setArray. volatile 保证可见性，happen-before
 
+public boolean add(int index, E element) {
+
+}
+
+final Object[] getArray() {
+    return array;
+}
+
+final void setArray(Object[] a) {
+    array = a;
+}
 ```
 
 
