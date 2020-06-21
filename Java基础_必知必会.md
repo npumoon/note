@@ -22,7 +22,7 @@
 
 运行时异常：不进行捕获也可编译通过（`extends RuntimeException`）
 
- `ClassCastException`, `OutOfIndexE` , `NullPointerException`
+ `ClassCastException`, `IndexOutOfBoundsException` , `NullPointerException`
 
 非运行时异常：（编译异常），需要捕获，否则编译不过。
 
@@ -34,4 +34,8 @@
  byte f = a+3; // × ： 不进行强制类型转换，编译报错
  byte f = (byte)(a+3) // √
  ```
+ 
+ ### super 关键字
+ 
+ 访问父类的方法，属性等
 
