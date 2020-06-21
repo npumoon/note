@@ -18,3 +18,20 @@
 
 简单说，多继承，如果多个父类有相同的方法，子类调用的时候，识别哪个呢？【如果可以带上父类标识，也能搞吧】
 
+### 运行时异常、非运行时异常
+
+运行时异常：不进行捕获也可编译通过（`extends RuntimeException`）
+
+ `ClassCastException`, `OutOfIndexE` , `NullPointerException`
+
+非运行时异常：（编译异常），需要捕获，否则编译不过。
+
+ `IOException`, `SQLException` 等
+ 
+ ### 强制类型转换
+ ```java
+ byte a=4, b=3;
+ byte f = a+3; // × ： 不进行强制类型转换，编译报错
+ byte f = (byte)(a+3) // √
+ ```
+
